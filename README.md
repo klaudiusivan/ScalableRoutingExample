@@ -2,6 +2,8 @@
 
 This project demonstrates how to implement a **tab bar navigation** system in a Swift application, using an **AppRouter** to manage scalable screen transitions across different tabs. Each tab has its own **UINavigationController**, and the **AppRouter** efficiently handles navigation within and across tabs, making the architecture modular and extensible.
 
+Additionally, the project is designed to showcase how features like **Push Notifications**, **Silent Push**, **Deep Linking**, and **In-App Push Notifications** could be integrated using a scalable routing architecture, but these features are not yet implemented.
+
 ## Features
 
 - **Scalable Routing Logic**: The app uses a centralized and modular routing system that allows flexible navigation across various feature modules.
@@ -11,6 +13,9 @@ This project demonstrates how to implement a **tab bar navigation** system in a 
 - **SceneDelegate Registration**: The `AppRouter` is registered in the **SceneDelegate** to ensure it's accessible throughout the app's lifecycle and manages routing for all tabs.
 - **Memory Leak Prevention**: The router is injected into view controllers using a `weak` reference, preventing retain cycles and memory leaks.
 - **SubDetail Screen Navigation**: The **Detail** screen includes the option to navigate to a **SubDetail** screen for additional detailed content.
+- **Designed for Future Extension**: The project is structured to support **Push Notifications**, **Silent Push**, **Deep Linking**, and **In-App Push**, but these features are not implemented yet.
+
+> **Note**: While the architecture supports scalable routing and is designed for features like **Push Notifications**, **Silent Push**, **Deep Linking**, and **In-App Push**, these features are **not implemented** in this project. The following examples show how they could be added.
 
 ## Screens
 
@@ -85,6 +90,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
+### 4. **Potential Future Extensions**
+
+The architecture in this project is designed to be easily extended for the following navigation types:
+
+#### **Deep Linking** (Future Implementation)
+Deep linking allows your app to be opened from URLs, mapping URL schemes to specific screens using the `ScreenIdentifier`.
+
+#### **Push Notifications** (Future Implementation)
+Push notifications can trigger navigation to specific screens in the app based on a payload. For example, a push notification could open the detail screen with specific dependencies.
+
+#### **Silent Push Notifications** (Future Implementation)
+Silent push notifications are background notifications that trigger background tasks, like data fetching or preparing a screen before the user opens the app.
+
+#### **In-App Push Notifications** (Future Implementation)
+In-app notifications prompt the user to navigate to a specific screen while they are already in the app. These notifications can trigger modals, banners, or inline prompts.
+
 ## Memory Management
 
 - **Weak References**: View controllers maintain weak references to the `AppRouter` to prevent **retain cycles**.
@@ -111,6 +132,10 @@ The app will launch with a tab bar containing **Home**, **Settings**, and **Deta
 
 ## Potential Future Improvements
 
+- **Push Notification Support**: Integrate full push notification handling with routing using `ScreenIdentifier`.
+- **Silent Push Background Tasks**: Add background tasks triggered by silent push notifications.
+- **Deep Linking Integration**: Implement deep link URL parsing to map URLs to screens in the app.
+- **In-App Push Notifications**: Display banners or modals for in-app notifications that allow users to navigate to specific screens.
 - **Additional Tabs**: The tab bar controller can easily be extended to include more tabs with their own `UINavigationController` instances.
 - **Dynamic Content**: The detail and sub-detail views can be extended to fetch dynamic content based on the passed `DetailDependency`.
 - **Deeper Navigation Stacks**: Support for more complex navigation flows within each tab by pushing more view controllers onto the navigation stack.
@@ -124,3 +149,4 @@ To avoid memory leaks:
 ## License
 
 This project is licensed under the MIT License.
+
