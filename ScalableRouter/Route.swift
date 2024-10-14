@@ -13,6 +13,6 @@ public protocol Route {
     ///   - source: The source from where the route starts (e.g., a UIViewController or any other entity).
     ///   - completion: A closure to be executed upon route completion, allowing the caller to handle post-route actions.
     ///   - identifier: The screen identifier to register.
-    mutating func start(from source: UIViewController?, using identifier: ScreenIdentifier, navigationType: NavigationType)
+    mutating func start<ScreenId: Hashable>(from source: UIViewController?, using identifier: ScreenId, navigationType: NavigationType)
 }
 

@@ -10,6 +10,7 @@ import UIKit
 import HomeModule
 import DomainModule
 import SwiftUI
+import ScalableRouter
 
 /// The route handler for the Home screen, conforming to `Route` and `HomeRouter`.
 public struct HomeRoute: HomeRouter, Route {
@@ -32,7 +33,7 @@ public struct HomeRoute: HomeRouter, Route {
     /// - Parameters:
     ///   - source: The source from where the route is initiated (e.g., a view controller).
     ///   - completion: A closure called after the route is completed.
-    public mutating func start(from source: UIViewController?, using identifier: ScreenIdentifier, navigationType: NavigationType) {
+    public mutating func start<ScreenId>(from source: UIViewController?, using identifier: ScreenId, navigationType: NavigationType) {
         guard let navigationController else { return }
         appRouter?.open(tabPage: .home)
         

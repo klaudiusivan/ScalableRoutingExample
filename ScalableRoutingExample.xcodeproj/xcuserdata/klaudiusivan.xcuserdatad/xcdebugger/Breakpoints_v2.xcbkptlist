@@ -14,10 +14,8 @@
             filePath = "ScalableRoutingExample/Routes/Root/AppRouter.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
-            landmarkName = "navigate(from:to:navigationType:)"
-            landmarkType = "7">
+            startingLineNumber = "148"
+            endingLineNumber = "148">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -30,8 +28,8 @@
             filePath = "ScalableRoutingExample/Routes/OthersRoute/SubDetailRoute.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "backToDetail()"
             landmarkType = "7">
          </BreakpointContent>
@@ -46,8 +44,8 @@
             filePath = "ScalableRoutingExample/Routes/OthersRoute/SubDetailRoute.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "start(from:using:navigationType:)"
             landmarkType = "7">
          </BreakpointContent>

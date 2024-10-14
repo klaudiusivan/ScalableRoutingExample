@@ -10,6 +10,7 @@ import HomeModule
 import DetailModule
 import SettingsModule
 import DomainModule
+import ScalableRouter
 
 /// The `SceneDelegate` is responsible for setting up the window and initializing the app's navigation structure.
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

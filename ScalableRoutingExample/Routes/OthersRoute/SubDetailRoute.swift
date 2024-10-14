@@ -8,6 +8,7 @@
 import UIKit
 import DetailModule
 import DomainModule
+import ScalableRouter
 
 /// The route handler for the Sub Detail screen, conforming to `Route` and `SubDetailRouter`.
 ///
@@ -32,7 +33,7 @@ public struct SubDetailRoute: SubDetailRouter, Route {
     /// - Parameters:
     ///   - source: The source from where the route is initiated (e.g., a view controller).
     ///   - completion: A closure called after the route is completed.
-    public mutating func start(from source: UIViewController?, using identifier: ScreenIdentifier, navigationType: NavigationType) {
+    public mutating func start<ScreenId>(from source: UIViewController?, using identifier: ScreenId, navigationType: NavigationType) {
         self.source = source
         let subDetailVC = SubDetailViewController(dependency: nil)
         subDetailVC.router = self

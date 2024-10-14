@@ -9,6 +9,7 @@
 import UIKit
 import SettingsModule
 import DomainModule
+import ScalableRouter
 
 /// The route handler for the Settings Detail screen, conforming to `Route` and `SettingsDetailRouter`.
 public struct SettingsDetailRoute: SettingsDetailRouter, Route {
@@ -31,7 +32,7 @@ public struct SettingsDetailRoute: SettingsDetailRouter, Route {
     /// - Parameters:
     ///   - source: The source from where the route is initiated (e.g., a view controller).
     ///   - completion: A closure called after the route is completed.
-    public mutating func start(from source: UIViewController?, using identifier: ScreenIdentifier, navigationType: NavigationType) {
+    public mutating func start<ScreenId>(from source: UIViewController?, using identifier: ScreenId, navigationType: NavigationType) {
         self.source = source
         let settingsDetailVC = SettingsDetailViewController()
         settingsDetailVC.router = self

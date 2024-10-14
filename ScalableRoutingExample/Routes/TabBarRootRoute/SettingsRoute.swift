@@ -9,6 +9,7 @@
 import UIKit
 import SettingsModule
 import DomainModule
+import ScalableRouter
 
 /// The route handler for the Settings screen, conforming to `Route` and `SettingsRouter`.
 ///
@@ -33,7 +34,7 @@ public struct SettingsRoute: SettingsRouter, Route {
     /// - Parameters:
     ///   - source: The source from where the route is initiated (e.g., a view controller).
     ///   - completion: A closure called after the route is completed.
-    public mutating func start(from source: UIViewController?, using identifier: ScreenIdentifier, navigationType: NavigationType) {
+    public mutating func start<ScreenId>(from source: UIViewController?, using identifier: ScreenId, navigationType: NavigationType) {
         if navigationType == .open(type: .root()) {
             guard let navigationController else { return }
             appRouter?.open(tabPage: .settings)

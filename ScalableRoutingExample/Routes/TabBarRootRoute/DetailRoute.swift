@@ -8,6 +8,7 @@
 import UIKit
 import DetailModule
 import DomainModule
+import ScalableRouter
 
 /// The route handler for the Detail screen, conforming to `Route` and `DetailRouter`.
 ///
@@ -33,11 +34,11 @@ public struct DetailRoute: DetailRouter, Route {
     /// - Parameters:
     ///   - source: The source from where the route is initiated (e.g., a view controller).
     ///   - completion: A closure called after the route is completed.
-    public mutating func start(from source: UIViewController?, using identifier: ScreenIdentifier, navigationType: NavigationType) {
+    public mutating func start<ScreenId>(from source: UIViewController?, using identifier: ScreenId, navigationType: NavigationType) {
         
-        guard
-            case let .detail(dependency) = identifier,
-            let dependency
+        guard let identifier = identifier as? ScreenIdentifier,
+              case let .detail(dependency) = identifier,
+              let dependency
         else {
             appRouter?.navigate(navigationType: navigationType)
             return

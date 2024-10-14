@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8755D8F2CBD34FB00A67159 /* ScalableRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8755D872CBD34FB00A67159 /* ScalableRouter.framework */; };
+		F8755D9A2CBD34FB00A67159 /* ScalableRouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8755D872CBD34FB00A67159 /* ScalableRouter.framework */; };
+		F8755D9B2CBD34FB00A67159 /* ScalableRouter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F8755D872CBD34FB00A67159 /* ScalableRouter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F88DA5C92CBAF48F00D44D52 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F88DA5C82CBAF48F00D44D52 /* README.md */; };
 		F88DA5DB2CBC24CA00D44D52 /* HomeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88DA5D32CBC24CA00D44D52 /* HomeModule.framework */; };
 		F88DA5E62CBC24CA00D44D52 /* HomeModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F88DA5D32CBC24CA00D44D52 /* HomeModule.framework */; };
@@ -36,6 +39,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = F85327C32CBAE81000FDCD69;
 			remoteInfo = ScalableRoutingExample;
+		};
+		F8755D902CBD34FB00A67159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85327BC2CBAE81000FDCD69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8755D862CBD34FB00A67159;
+			remoteInfo = ScalableRouter;
+		};
+		F8755D922CBD34FB00A67159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85327BC2CBAE81000FDCD69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F85327C32CBAE81000FDCD69;
+			remoteInfo = ScalableRoutingExample;
+		};
+		F8755D982CBD34FB00A67159 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85327BC2CBAE81000FDCD69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8755D862CBD34FB00A67159;
+			remoteInfo = ScalableRouter;
 		};
 		F88DA5DC2CBC24CA00D44D52 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -132,6 +156,7 @@
 			files = (
 				F88DA66E2CBC25C600D44D52 /* DomainModule.framework in Embed Frameworks */,
 				F88DA5E72CBC24CA00D44D52 /* HomeModule.framework in Embed Frameworks */,
+				F8755D9B2CBD34FB00A67159 /* ScalableRouter.framework in Embed Frameworks */,
 				F88DA62A2CBC250F00D44D52 /* DetailModule.framework in Embed Frameworks */,
 				F88DA64B2CBC252000D44D52 /* SettingsModule.framework in Embed Frameworks */,
 			);
@@ -144,6 +169,8 @@
 		F85327C42CBAE81000FDCD69 /* ScalableRoutingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScalableRoutingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85327DA2CBAE81200FDCD69 /* ScalableRoutingExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalableRoutingExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85327E42CBAE81200FDCD69 /* ScalableRoutingExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalableRoutingExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8755D872CBD34FB00A67159 /* ScalableRouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ScalableRouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8755D8E2CBD34FB00A67159 /* ScalableRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScalableRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88DA5C82CBAF48F00D44D52 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F88DA5D32CBC24CA00D44D52 /* HomeModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HomeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F88DA5DA2CBC24CA00D44D52 /* HomeModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -162,6 +189,13 @@
 				Info.plist,
 			);
 			target = F85327C32CBAE81000FDCD69 /* ScalableRoutingExample */;
+		};
+		F8755D9F2CBD34FB00A67159 /* Exceptions for "ScalableRouter" folder in "ScalableRouter" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				ScalableRouter.h,
+			);
+			target = F8755D862CBD34FB00A67159 /* ScalableRouter */;
 		};
 		F88DA5EB2CBC24CA00D44D52 /* Exceptions for "HomeModule" folder in "HomeModule" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
@@ -210,6 +244,19 @@
 		F85327E72CBAE81200FDCD69 /* ScalableRoutingExampleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = ScalableRoutingExampleUITests;
+			sourceTree = "<group>";
+		};
+		F8755D882CBD34FB00A67159 /* ScalableRouter */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F8755D9F2CBD34FB00A67159 /* Exceptions for "ScalableRouter" folder in "ScalableRouter" target */,
+			);
+			path = ScalableRouter;
+			sourceTree = "<group>";
+		};
+		F8755D942CBD34FB00A67159 /* ScalableRouterTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = ScalableRouterTests;
 			sourceTree = "<group>";
 		};
 		F88DA5D42CBC24CA00D44D52 /* HomeModule */ = {
@@ -273,6 +320,7 @@
 			files = (
 				F88DA66D2CBC25C600D44D52 /* DomainModule.framework in Frameworks */,
 				F88DA5E62CBC24CA00D44D52 /* HomeModule.framework in Frameworks */,
+				F8755D9A2CBD34FB00A67159 /* ScalableRouter.framework in Frameworks */,
 				F88DA6292CBC250F00D44D52 /* DetailModule.framework in Frameworks */,
 				F88DA64A2CBC252000D44D52 /* SettingsModule.framework in Frameworks */,
 			);
@@ -289,6 +337,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8755D842CBD34FB00A67159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8755D8B2CBD34FB00A67159 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8755D8F2CBD34FB00A67159 /* ScalableRouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +433,8 @@
 				F88DA6442CBC252000D44D52 /* SettingsModuleTests */,
 				F88DA65B2CBC25C600D44D52 /* DomainModule */,
 				F88DA6672CBC25C600D44D52 /* DomainModuleTests */,
+				F8755D882CBD34FB00A67159 /* ScalableRouter */,
+				F8755D942CBD34FB00A67159 /* ScalableRouterTests */,
 				F85327C52CBAE81000FDCD69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -388,6 +453,8 @@
 				F88DA63E2CBC252000D44D52 /* SettingsModuleTests.xctest */,
 				F88DA65A2CBC25C600D44D52 /* DomainModule.framework */,
 				F88DA6612CBC25C600D44D52 /* DomainModuleTests.xctest */,
+				F8755D872CBD34FB00A67159 /* ScalableRouter.framework */,
+				F8755D8E2CBD34FB00A67159 /* ScalableRouterTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -395,6 +462,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		F8755D822CBD34FB00A67159 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F88DA5CE2CBC24CA00D44D52 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,6 +516,7 @@
 				F88DA6282CBC250F00D44D52 /* PBXTargetDependency */,
 				F88DA6492CBC252000D44D52 /* PBXTargetDependency */,
 				F88DA66C2CBC25C600D44D52 /* PBXTargetDependency */,
+				F8755D992CBD34FB00A67159 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				F85327C62CBAE81000FDCD69 /* ScalableRoutingExample */,
@@ -498,6 +573,53 @@
 			productName = ScalableRoutingExampleUITests;
 			productReference = F85327E42CBAE81200FDCD69 /* ScalableRoutingExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F8755D862CBD34FB00A67159 /* ScalableRouter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8755D9C2CBD34FB00A67159 /* Build configuration list for PBXNativeTarget "ScalableRouter" */;
+			buildPhases = (
+				F8755D822CBD34FB00A67159 /* Headers */,
+				F8755D832CBD34FB00A67159 /* Sources */,
+				F8755D842CBD34FB00A67159 /* Frameworks */,
+				F8755D852CBD34FB00A67159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				F8755D882CBD34FB00A67159 /* ScalableRouter */,
+			);
+			name = ScalableRouter;
+			packageProductDependencies = (
+			);
+			productName = ScalableRouter;
+			productReference = F8755D872CBD34FB00A67159 /* ScalableRouter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8755D8D2CBD34FB00A67159 /* ScalableRouterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8755DA02CBD34FB00A67159 /* Build configuration list for PBXNativeTarget "ScalableRouterTests" */;
+			buildPhases = (
+				F8755D8A2CBD34FB00A67159 /* Sources */,
+				F8755D8B2CBD34FB00A67159 /* Frameworks */,
+				F8755D8C2CBD34FB00A67159 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8755D912CBD34FB00A67159 /* PBXTargetDependency */,
+				F8755D932CBD34FB00A67159 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				F8755D942CBD34FB00A67159 /* ScalableRouterTests */,
+			);
+			name = ScalableRouterTests;
+			packageProductDependencies = (
+			);
+			productName = ScalableRouterTests;
+			productReference = F8755D8E2CBD34FB00A67159 /* ScalableRouterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		F88DA5D22CBC24CA00D44D52 /* HomeModule */ = {
 			isa = PBXNativeTarget;
@@ -708,6 +830,13 @@
 						CreatedOnToolsVersion = 16.0;
 						TestTargetID = F85327C32CBAE81000FDCD69;
 					};
+					F8755D862CBD34FB00A67159 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					F8755D8D2CBD34FB00A67159 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = F85327C32CBAE81000FDCD69;
+					};
 					F88DA5D22CBC24CA00D44D52 = {
 						CreatedOnToolsVersion = 16.0;
 						LastSwiftMigration = 1600;
@@ -767,6 +896,8 @@
 				F88DA63D2CBC252000D44D52 /* SettingsModuleTests */,
 				F88DA6592CBC25C600D44D52 /* DomainModule */,
 				F88DA6602CBC25C600D44D52 /* DomainModuleTests */,
+				F8755D862CBD34FB00A67159 /* ScalableRouter */,
+				F8755D8D2CBD34FB00A67159 /* ScalableRouterTests */,
 			);
 		};
 /* End PBXProject section */
@@ -788,6 +919,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F85327E22CBAE81200FDCD69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8755D852CBD34FB00A67159 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8755D8C2CBD34FB00A67159 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -874,6 +1019,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8755D832CBD34FB00A67159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8755D8A2CBD34FB00A67159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F88DA5CF2CBC24CA00D44D52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -942,6 +1101,21 @@
 			isa = PBXTargetDependency;
 			target = F85327C32CBAE81000FDCD69 /* ScalableRoutingExample */;
 			targetProxy = F85327E52CBAE81200FDCD69 /* PBXContainerItemProxy */;
+		};
+		F8755D912CBD34FB00A67159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8755D862CBD34FB00A67159 /* ScalableRouter */;
+			targetProxy = F8755D902CBD34FB00A67159 /* PBXContainerItemProxy */;
+		};
+		F8755D932CBD34FB00A67159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F85327C32CBAE81000FDCD69 /* ScalableRoutingExample */;
+			targetProxy = F8755D922CBD34FB00A67159 /* PBXContainerItemProxy */;
+		};
+		F8755D992CBD34FB00A67159 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8755D862CBD34FB00A67159 /* ScalableRouter */;
+			targetProxy = F8755D982CBD34FB00A67159 /* PBXContainerItemProxy */;
 		};
 		F88DA5DD2CBC24CA00D44D52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1248,6 +1422,110 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ScalableRoutingExample;
+			};
+			name = Release;
+		};
+		F8755D9D2CBD34FB00A67159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.ScalableRouter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8755D9E2CBD34FB00A67159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.ScalableRouter;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8755DA12CBD34FB00A67159 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.ScalableRouterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScalableRoutingExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScalableRoutingExample";
+			};
+			name = Debug;
+		};
+		F8755DA22CBD34FB00A67159 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9TDAR667HU;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = klau.studio.ScalableRouterTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScalableRoutingExample.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScalableRoutingExample";
 			};
 			name = Release;
 		};
@@ -1714,6 +1992,24 @@
 			buildConfigurations = (
 				F85327F62CBAE81200FDCD69 /* Debug */,
 				F85327F72CBAE81200FDCD69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8755D9C2CBD34FB00A67159 /* Build configuration list for PBXNativeTarget "ScalableRouter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8755D9D2CBD34FB00A67159 /* Debug */,
+				F8755D9E2CBD34FB00A67159 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8755DA02CBD34FB00A67159 /* Build configuration list for PBXNativeTarget "ScalableRouterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8755DA12CBD34FB00A67159 /* Debug */,
+				F8755DA22CBD34FB00A67159 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
